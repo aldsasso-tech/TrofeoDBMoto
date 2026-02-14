@@ -1,0 +1,87 @@
+:root {
+  --trof-blue: #0a1628;
+  --trof-blue-mid: #1a2d4a;
+  --trof-red: #c41e3a;
+  --trof-red-dark: #8b1528;
+  --trof-gradient: linear-gradient(135deg, var(--trof-blue) 0%, var(--trof-blue-mid) 40%, var(--trof-red-dark) 70%, var(--trof-red) 100%);
+  --trof-bg: linear-gradient(180deg, #0a1628 0%, #1a2d4a 50%, #2d1a2a 100%);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--trof-bg);
+  min-height: 100vh;
+  color: #e8e8e8;
+}
+
+.app-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-trof {
+  background: var(--trof-gradient) !important;
+  box-shadow: 0 4px 20px rgba(196, 30, 58, 0.3);
+}
+.navbar-trof .navbar-brand,
+.navbar-trof .nav-link {
+  color: #fff !important;
+}
+.navbar-trof .nav-link:hover { color: #ffd700 !important; }
+
+.btn-trof {
+  background: linear-gradient(135deg, var(--trof-red-dark), var(--trof-red));
+  border: none;
+  color: #fff;
+}
+.btn-trof:hover {
+  background: linear-gradient(135deg, var(--trof-red), #e63950);
+  color: #fff;
+}
+
+.card-trof {
+  background: rgba(26, 45, 74, 0.8);
+  border: 1px solid rgba(196, 30, 58, 0.4);
+  border-radius: 12px;
+  color: #e8e8e8;
+}
+
+.main-content { flex: 1; padding: 1.5rem 0; }
+
+.logo-trof {
+  max-height: 80px;
+  width: auto;
+}
+
+.form-control, .form-select {
+  background: rgba(10, 22, 40, 0.8);
+  border: 1px solid rgba(196, 30, 58, 0.5);
+  color: #e8e8e8;
+}
+.form-control:focus, .form-select:focus {
+  background: rgba(26, 45, 74, 0.9);
+  border-color: var(--trof-red);
+  color: #fff;
+}
+
+.table-trof {
+  color: #e8e8e8;
+}
+.table-trof thead th {
+  background: rgba(196, 30, 58, 0.4);
+  border-color: var(--trof-red);
+}
+.table-trof tbody tr:hover {
+  background: rgba(26, 45, 74, 0.6);
+}
+
+.footer-trof {
+  background: var(--trof-gradient);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
